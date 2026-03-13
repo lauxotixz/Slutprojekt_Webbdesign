@@ -1,3 +1,33 @@
 body {
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(128, 128, 128);
+}
+
+.navbar_links {
+    gap: 1em;
+}
+
+.navbar_links a {
+    text-decoration: none;
+    color: black;
+}
+
+.home_logo {
+    gap: 1em;
+}
+
+.home_logo a {
+    text-decoration: none;
+    color: black;
 }
