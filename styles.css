@@ -1,33 +1,80 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: grey;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.welcome_page {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.5rem;
-    padding: 1rem;
-    background-color: rgb(128, 128, 128);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    z-index: 10;
+    margin-right: 0.3em;
+    margin-left: 0.3em;
 }
 
 .navbar_links {
+    display: flex;
     gap: 1em;
 }
 
 .navbar_links a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .home_logo {
     gap: 1em;
+    font-size: 1.4rem;
 }
 
 .home_logo a {
     text-decoration: none;
+    color: white;
+}
+
+.welcome_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    width: 100%;
+    margin-top: 15vh;
+}
+
+.welcome_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.welcome_button button {
+    background-color: white;
     color: black;
+    border: solid black;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-size: 200% 100%;
+    background-position: right center;
+}
+
+.welcome_button button:hover {
+    background-position: left center;
+    transform: scale(1.1);
 }
