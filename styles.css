@@ -95,17 +95,67 @@ body:not(.welcome_page) footer {
 
 .footer_container {
     position: relative;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 22vh;
     background-color: navy;
-    padding-bottom: 0.3rem;
-    /* reserve space for footer_legal */
-    gap: 0.2rem;
+    padding-bottom: 1rem;
+    gap: 0;
+}
+
+.carousel_logo {
+    margin-top: 1em;
+    display: flex;
+    posistion: relative;
+    overflow-x: auto;
+    width: 100%;
+    order: -1;
+}
+
+.carousel_logo::-webkit-scrollbar {
+    display: none;
+}
+
+.group1 {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    animation: slide 13s infinite linear;
+    padding-right: 2em;
+}
+
+.card {
+    height: 1.5em;
+    flex: 0 0 1.5em;
+    padding: 1em;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.8);
+}
+
+/* Youtube logo */
+.card:nth-child(1) img {
+    transform: scale(4.5);
+}
+
+/* Snapchat logo */
+.card:nth-child(4) img {
+    transform: scale(2.1);
 }
 
 .footer_links a {
@@ -128,4 +178,15 @@ body:not(.welcome_page) footer {
 .footer_info,
 .footer_links {
     padding-bottom: 0.4rem;
+}
+
+@keyframes slide {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+
 }
