@@ -5,6 +5,20 @@ body {
     padding: 0;
 }
 
+body:not(.welcome_page) {
+    min-height: 100vh;
+    padding-bottom: 10vh;
+}
+
+body:not(.welcome_page) footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
+}
+
 .welcome_page {
     background-image: url(img/background.jpg);
     background-size: cover;
@@ -77,4 +91,41 @@ body {
 .welcome_button button:hover {
     background-position: left center;
     transform: scale(1.1);
+}
+
+.footer_container {
+    position: relative;
+    font-size: 0.8rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 22vh;
+    background-color: navy;
+    padding-bottom: 0.3rem;
+    /* reserve space for footer_legal */
+    gap: 0.2rem;
+}
+
+.footer_links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_legal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    margin: 0;
+}
+
+.footer_info,
+.footer_links {
+    padding-bottom: 0.4rem;
 }
