@@ -126,13 +126,13 @@ body:not(.welcome_page) footer {
     gap: 2em;
     justify-content: center;
     align-items: center;
-    animation: slide 13s infinite linear;
+    animation: slide 20s infinite linear;
     padding-right: 2em;
 }
 
 .card {
-    height: 1.5em;
-    flex: 0 0 1.5em;
+    height: 1.3em;
+    flex: 0 0 1.3em;
     padding: 1em;
     background-color: transparent;
     display: flex;
@@ -150,7 +150,7 @@ body:not(.welcome_page) footer {
 
 /* Youtube logo */
 .card:nth-child(1) img {
-    transform: scale(4.5);
+    transform: scale(5);
 }
 
 /* Snapchat logo */
