@@ -6,17 +6,13 @@ body {
 }
 
 body:not(.welcome_page) {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    padding-bottom: 10vh;
 }
 
 body:not(.welcome_page) footer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 20;
+    margin-top: auto;
 }
 
 .welcome_page {
@@ -111,7 +107,7 @@ body:not(.welcome_page) footer {
 .carousel_logo {
     margin-top: 1em;
     display: flex;
-    posistion: relative;
+    position: relative;
     overflow-x: auto;
     width: 100%;
     order: -1;
@@ -126,7 +122,7 @@ body:not(.welcome_page) footer {
     gap: 2em;
     justify-content: center;
     align-items: center;
-    animation: slide 20s infinite linear;
+    animation: slide 30s infinite linear;
     padding-right: 2em;
 }
 
@@ -188,5 +184,66 @@ body:not(.welcome_page) footer {
     to {
         translate: -100%;
     }
-
 }
+
+.product_display_store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid red 5px;
+}
+
+.product_name {
+    color: red;
+    border: solid red 5px;
+}
+
+.product_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: solid red 5px;
+    gap: 20px;
+}
+
+.product_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid red 5px;
+    width: 45vw;
+    height: 45vw;
+    max-width: 450px;
+    max-height: 450px;
+}
+
+.product_img img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(2);
+}
+
+.product_img p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product_info {
+    width: 45vw;
+    height: 45vw;
+    max-width: 450px;
+    max-height: 450px;
+    overflow: auto;
+}
+
+.product_material {}
+
+.product_shipping {}
+
+.product_measurement {}
