@@ -266,7 +266,6 @@ body:not(.welcome_page) footer {
     overflow: hidden;
     transition: max-height 0.3s ease;
     background: #f1f1f1;
-
     border: solid black 2px;
 }
 
