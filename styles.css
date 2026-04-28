@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body:not(.welcome_page) {
     display: flex;
     flex-direction: column;
