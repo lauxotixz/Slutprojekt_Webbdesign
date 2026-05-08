@@ -1,5 +1,6 @@
+/* body */
 body {
-    background-color: grey;
+    background-color: rgb(235, 235, 235);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
@@ -19,6 +20,7 @@ body:not(.welcome_page) footer {
     margin-top: auto;
 }
 
+/* main page stuff */
 .welcome_page {
     background-image: url(img/background.jpg);
     background-size: cover;
@@ -44,7 +46,7 @@ body:not(.welcome_page) footer {
 
 .navbar_links a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .home_logo {
@@ -54,7 +56,7 @@ body:not(.welcome_page) footer {
 
 .home_logo a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .welcome_text {
@@ -93,6 +95,7 @@ body:not(.welcome_page) footer {
     transform: scale(1.1);
 }
 
+/* everything related to the footer */
 .footer_container {
     position: relative;
     font-size: 1rem;
@@ -102,7 +105,7 @@ body:not(.welcome_page) footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 22vh;
+    height: 25vh;
     background-color: navy;
     padding-bottom: 1rem;
     gap: 1.5rem;
@@ -114,6 +117,29 @@ body:not(.welcome_page) footer {
     margin: 0 1.5rem 2rem;
 }
 
+.footer_links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_legal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0.3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+    margin: 0;
+}
+
+.footer_info,
+.footer_links {
+    padding-bottom: 0.4rem;
+}
+
+/* carousel stuff */
 .carousel_logo {
     margin-top: 1em;
     display: flex;
@@ -134,10 +160,11 @@ body:not(.welcome_page) footer {
     align-items: center;
     animation: slide 30s infinite linear;
     padding-right: 2em;
+    border: solid green 5px;
 }
 
 .card {
-    height: 1.3em;
+    height: 1.4em;
     flex: 0 0 1.3em;
     padding: 1em;
     background-color: transparent;
@@ -164,28 +191,6 @@ body:not(.welcome_page) footer {
     transform: scale(2.1);
 }
 
-.footer_links a {
-    text-decoration: none;
-    color: white;
-}
-
-.footer_legal {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0.3rem;
-    width: 100%;
-    text-align: center;
-    font-size: 0.7rem;
-    color: white;
-    margin: 0;
-}
-
-.footer_info,
-.footer_links {
-    padding-bottom: 0.4rem;
-}
-
 @keyframes slide {
     from {
         translate: 0;
@@ -196,18 +201,18 @@ body:not(.welcome_page) footer {
     }
 }
 
+/* everything related to the store page */
 .product_display_store {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid blue 5px;
+    padding-bottom: 4em;
 }
 
 .product_name {
-    color: red;
-    border: solid violet 5px;
     margin-bottom: 0.5em;
+    text-align: center;
 }
 
 .product_container {
@@ -215,7 +220,6 @@ body:not(.welcome_page) footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    border: solid red 5px;
     gap: 1em;
     margin-bottom: 1em;
 }
@@ -224,7 +228,6 @@ body:not(.welcome_page) footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid green 5px;
     width: 45vw;
     height: 55vw;
     max-width: 450px;
@@ -250,23 +253,36 @@ body:not(.welcome_page) footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid yellow 5px;
     width: 45vw;
     height: 55vw;
     max-width: 450px;
     max-height: 450px;
     overflow: auto;
+    font-size: 1rem;
+}
+
+/* dropdown menu for store page */
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 20em;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .dropdown {
     margin-bottom: 0.8em;
     position: relative;
+    width: 100%;
     z-index: 20;
 }
 
 .btn {
     width: 100%;
-    min-width: 15em;
+    min-width: auto;
+    max-width: 18em;
     padding: 0.5em;
     font-size: 1.1rem;
     cursor: pointer;
@@ -289,6 +305,7 @@ body:not(.welcome_page) footer {
     padding: 0.5em;
 }
 
+/* media queries for computer or larger screens above 992px */
 @media (min-width: 992px) {
     .navbar_links {
         font-size: 2rem;
@@ -303,8 +320,17 @@ body:not(.welcome_page) footer {
         font-size: 1.7rem;
     }
 
+    .dropdown-container {
+        max-width: 45em;
+    }
+
     .btn {
-        min-width: 35em;
+        min-width: auto;
+        max-width: 45em;
+    }
+
+    .footer_container {
+        min-height: 30vh;
     }
 
     .footer_links,
