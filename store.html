@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Store</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
@@ -12,96 +12,71 @@
 <body>
     <nav>
         <div class="navbar">
-            <div class="home_logo"> <a href="index.html">Placeholder</a> </div>
+            <div class="home_logo"> <a href="index.html">Kuroha</a>
+            </div>
             <div class="navbar_links"> <a href="index.html">Home</a> <a href="store.html">Store</a> <a
                     href="aboutUs.html">About Us</a> <a href="help.html">Help</a> </div>
         </div>
     </nav> <!-- product 1 -->
     <div class="product_display_store">
         <div class="product_name">
-            <h1>Product 1</h1>
+            <h1>Kuroha Damascus Knife</h1>
         </div>
         <div class="product_container">
-            <div class="product_img"> <img src="img/youtube_logo.png" alt="daw"> </div>
+            <div class="product_img">
+                <div class="img_slider">
+                    <div class="img_slides">
+                        <img class="img_slide" src="render/knife_black_Camera 1.jpg" alt="Black knife front view">
+                        <img class="img_slide" src="render/knife_black_Camera 2.jpg" alt="Black knife side view">
+                        <img class="img_slide" src="render/knife_black_Camera 3.jpg" alt="Black knife detail view">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+
+            </div>
             <div class="product_info">
-                <p> This is a placeholder text. Work in progress.This is a placeholder text. Work in progress.This is a
-                    placeholder text. Work in progress.This is a placeholder text. Work in progress. </p>
+                <div class="product_color_options" aria-label="Choose product color">
+                    <button class="color-option active" type="button" data-color="black" aria-label="Black color">
+                        <span class="color-swatch black"></span> Black
+                    </button>
+                    <button class="color-option" type="button" data-color="oak" aria-label="Oak color">
+                        <span class="color-swatch oak"></span> Oak
+                    </button>
+                    <button class="color-option" type="button" data-color="walnut" aria-label="Walnut color">
+                        <span class="color-swatch walnut"></span> Walnut
+                    </button>
+                </div>
+                <p>Inspired by the precision of Japanese blade-making and the calm simplicity of Nordic design, the
+                    Kuroha Damascus Knife brings together sharp performance, refined craftsmanship, and elegant everyday
+                    style. Its balanced form feels natural in the hand, while the layered finish and thoughtful
+                    proportions give it a distinctive presence in the kitchen. This is a knife made for cooks who value
+                    control, comfort, and a design that feels as beautiful as it performs. From busy weekday meals to
+                    slow weekend cooking, it offers the kind of reliability and calm confidence that makes everyday prep
+                    feel more enjoyable and more precise.</p>
             </div>
         </div>
         <div class="dropdown-container">
             <div class="dropdown"> <button class="btn">Material</button>
                 <div class="content">
-                    <p>Work in progress.</p>
+                    <p>Crafted with a refined steel core and a layered Damascus-inspired finish, this knife combines
+                        durability, sharpness, and a striking visual texture that makes every cut feel intentional. The
+                        blade is designed to stay balanced and responsive, while the handle shape offers a secure,
+                        comfortable grip for both quick prep and longer cooking sessions. Every detail supports a clean,
+                        controlled experience in the kitchen, from slicing herbs and vegetables to handling more
+                        demanding ingredients with confidence and ease.</p>
                 </div>
             </div>
             <div class="dropdown"> <button class="btn">Care instructions</button>
                 <div class="content">
-                    <p>Work in progress.</p>
+                    <p>Hand wash after use, dry immediately, and store the knife safely in a dry place to preserve both
+                        the blade and the finish over time. Avoid prolonged soaking, dishwasher cleaning, and harsh
+                        detergents, as these can affect the surface and edge. With regular care, your knife will
+                        maintain its sharpness, balance, and refined appearance for years of everyday use, helping it
+                        stay as reliable and beautiful on day one as it is after many meals in the kitchen.</p>
                 </div>
             </div>
-            <div class="dropdown"> <button class="btn">Size Guide</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-        </div>
-    </div> <!-- product 2 -->
-    <div class="product_display_store">
-        <div class="product_name">
-            <h1>Product 2</h1>
-        </div>
-        <div class="product_container">
-            <div class="product_img"> <img src="img/youtube_logo.png" alt="daw"> </div>
-            <div class="product_info">
-                <p> This is a placeholder text. Work in progress.This is a placeholder text. Work in progress.This is a
-                    placeholder text. Work in progress.This is a placeholder text. Work in progress. </p>
-            </div>
-        </div>
-        <div class="dropdown-container">
-            <div class="dropdown"> <button class="btn">Material</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-            <div class="dropdown"> <button class="btn">Care instructions</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-            <div class="dropdown"> <button class="btn">Size Guide</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-        </div>
-    </div> <!-- product 3 -->
-    <div class="product_display_store">
-        <div class="product_name">
-            <h1>Product 3</h1>
-        </div>
-        <div class="product_container">
-            <div class="product_img"> <img src="img/youtube_logo.png" alt="daw"> </div>
-            <div class="product_info">
-                <p> This is a placeholder text. Work in progress.This is a placeholder text. Work in progress.This is a
-                    placeholder text. Work in progress.This is a placeholder text. Work in progress. </p>
-            </div>
-        </div>
-        <div class="dropdown-container">
-            <div class="dropdown"> <button class="btn">Material</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-            <div class="dropdown"> <button class="btn">Care instructions</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
-            <div class="dropdown"> <button class="btn">Size Guide</button>
-                <div class="content">
-                    <p>Work in progress.</p>
-                </div>
-            </div>
+
         </div>
     </div>
     <footer>
@@ -134,12 +109,12 @@
                     <div class="card"><a href="https://x.com/"><img src="img/x_logo.png" alt="X Logo"></a></div>
                 </div>
             </div>
-            <p class="footer_info"> Contact information: <br> placeholder@gmail.com <br> +46 70 123 45 67 <br> Kungälv,
+            <p class="footer_info"> Contact information: <br> kuroha@gmail.com <br> +46 70 123 45 67 <br> Kungälv,
                 Sweden </p>
             <p class="footer_links"> <a href="index.html">Home</a> <br> <a href="store.html">Store</a> <br> <a
                     href="aboutUs.html">About Us</a> <br> <a href="help.html">Help</a> </p>
             <div>
-                <p class="footer_legal"> © 2026 Placeholder. All rights reserved. </p>
+                <p class="footer_legal"> © 2026 Kuroha. All rights reserved. </p>
             </div>
         </div>
     </footer>
