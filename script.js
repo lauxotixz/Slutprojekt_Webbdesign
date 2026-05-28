@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const colorButtons = document.querySelectorAll(".color-option");
     let img_slideIndex = 0;
     let currentColor = "black";
-
     function updateSlides() {
         const slides = document.querySelectorAll(".img_slides img");
         if (!slides.length) return;
@@ -73,6 +72,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.nextSlide = () => showSlide(img_slideIndex + 1);
     window.prevSlide = () => showSlide(img_slideIndex - 1);
-
     setColor("black");
 });

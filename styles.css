@@ -40,6 +40,7 @@ body:not(.welcome_page) footer {
     position: fixed;
     width: 100%;
     top: 0;
+    box-sizing: border-box;
 }
 
 .navbar_links {
@@ -348,6 +349,27 @@ body:not(.welcome_page) footer {
     padding-bottom: 0.25rem;
 }
 
+.add-to-cart-btn {
+    width: 100%;
+    max-width: 220px;
+    padding: 0.65rem 1rem;
+    border: none;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    background: linear-gradient(135deg, #333, #111);
+}
+
 .product_color_options {
     display: flex;
     flex-wrap: wrap;
@@ -366,7 +388,7 @@ body:not(.welcome_page) footer {
     background: #fff;
     cursor: pointer;
     font-size: 0.95rem;
-    transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .color-option:hover,
@@ -450,15 +472,20 @@ body:not(.welcome_page) footer {
 .content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: max-height 0.35s ease, opacity 0.25s ease, transform 0.25s ease, padding 0.25s ease;
     border: solid black 2px;
     position: relative;
     z-index: 20;
     background-color: rgb(207, 207, 207);
+    padding: 0 0.5em;
 }
 
 .content.open {
-    max-height: 4em;
+    max-height: 13em;
+    opacity: 1;
+    transform: translateY(0);
     padding: 0.5em;
 }
 
